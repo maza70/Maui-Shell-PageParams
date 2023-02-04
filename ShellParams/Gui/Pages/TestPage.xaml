@@ -21,7 +21,7 @@
                 HorizontalOptions="Center" />
 
 
-                <Label Text="Parameter from MainPage"    FontSize="24"/>
+                <Label Text="Parameter from MainPage"    FontSize="24" Margin="0,20,0,0"/>
                 <Entry x:Name="edOne" Placeholder="1" Margin="0,0,0,60" ></Entry>
 
                 <Label Text="Parameter for TestPage2"    FontSize="24"/>
