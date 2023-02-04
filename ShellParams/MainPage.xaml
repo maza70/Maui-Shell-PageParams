@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<zbase:ZMainContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:zbase="clr-namespace:De.Maza.ShellParams.Gui.Base"
+             x:Class="De.Maza.ShellParams.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Maui shell page parameters demo"
+                FontSize="32"
+                HorizontalTextAlignment="Center"
+                
+                />
+
+            <Label
+                Text="Sample for sub page parameters and results"
+                FontSize="18"
+                HorizontalTextAlignment="Center"/>
+
+            <Button
+                Text="Open sub page"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</zbase:ZMainContentPage>

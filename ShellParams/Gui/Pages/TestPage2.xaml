@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<zbase:ZSubContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:zbase="clr-namespace:De.Maza.ShellParams.Gui.Base"
+             x:Class="De.Maza.ShellParams.Gui.Pages.TestPage2"
+             Title="Test sub page 2">
+    <VerticalStackLayout>
+        <Label 
+            Text="Parameter text"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Entry x:Name="edParameter" IsReadOnly="True"/>
+
+        <Label 
+            Text="Parameter counter"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry x:Name="edCounter" IsReadOnly="True"/>
+
+
+        <Label 
+            Text="Return"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry x:Name="edReturn" Text="TestPage 2"/>
+        
+        
+        <Button Text="close" Clicked="Button_Clicked"></Button>
+    </VerticalStackLayout>
+</zbase:ZSubContentPage>

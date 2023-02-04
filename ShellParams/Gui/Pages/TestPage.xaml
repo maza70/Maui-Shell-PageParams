@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<zbase:ZSubContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:zbase="clr-namespace:De.Maza.ShellParams.Gui.Base"
+             x:Class="De.Maza.ShellParams.Gui.Pages.TestPage"
+             Title="Test sub page 1">
+
+
+
+    <StackLayout
+            Spacing="25"
+            Padding="30,0"
+        >
+
+        <ScrollView  VerticalOptions="FillAndExpand">
+            <VerticalStackLayout VerticalOptions="CenterAndExpand">
+
+                <Image
+                Source="dotnet_bot.png"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+
+                <Label Text="Parameter from MainPage"    FontSize="24"/>
+                <Entry x:Name="edOne" Placeholder="1" Margin="0,0,0,60" ></Entry>
+
+                <Label Text="Parameter for TestPage2"    FontSize="24"/>
+                <Entry x:Name="edTest2Param" Text="param for page 2" Margin="0,0,0,0"  HorizontalOptions="FillAndExpand"></Entry>
+                <Label Text="Result of TestPage2"/>
+                <Entry x:Name="edTest2Result"  Placeholder="No result" Margin="0,0,0,30" ></Entry>
+                <Button Text="Open TestPage2" Clicked="Button_Clicked_1" Margin="0"/>
+            </VerticalStackLayout>
+        </ScrollView>
+        <Button Text="Close me" Clicked="Button_Clicked" Margin="0,20,0,20"/>
+    </StackLayout>
+</zbase:ZSubContentPage>
